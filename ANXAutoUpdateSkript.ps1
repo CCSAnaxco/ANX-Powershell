@@ -15,7 +15,7 @@
 .PARAMETER DBBackupPath
     Backuppfad für die DB
 .PARAMETER DatabaseName
-    AX Datenbankname
+o    AX Datenbankname
 .PARAMETER axAosPath 
     Pfad zur AOS 
 .PARAMETER varModelPath
@@ -55,7 +55,7 @@ $argumentList += ("-EPServer", "AXSP2013-01")
 $argumentList += ("-EPSites", "EPANXEmptiesRollCenter, EPANXServiceServiceOperations, EPANXTMSInboundLogistics")
 $argumentList += ("-EPUrl", "http://axaos-07-ep:52712")
 $argumentList += ("-clearCUSModel", $true)
-$argumentList += ("-UpdateAdminEmail", @('carsten.cors@anaxco.de', 'stefan.wojtas@anaxco.de'))
+o$argumentList += ("-UpdateAdminEmail", @('foo@baa.com', 'john.white@baa.com'))
 
 Invoke-Expression "$scriptPath $argumentList"
 
